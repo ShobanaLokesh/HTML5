@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GeoLocation</title>
+</head>
+<body>
+    <h1>GeoLocation</h1>
+    <button onclick="getPresentLocation()">Get Current Location</button>
+    <script>
+        var getPresentLocation=function(){
+            navigator.geolocation.getCurrentPosition(successFunction)
+        }
+
+        var successFunction=function(location){
+            console.log((location));
+            var lat= location.coords.latitude
+            var lon = location.coords.longitude
+            console.log("latitude:" +lat);
+            console.log("longitude:" +lon);
+        }
+    </script>
+    
+</body>
+</html>

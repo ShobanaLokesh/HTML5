@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>HTML5 Welcome</title>
+    </head>
+    <body>
+        <H1> Welcome To HTML5 Training</H1>
+        <h3>Video</h3>
+        <hr>
+        <video id="myvideo" width="450" controls loop muted>
+            <source src="video.mp4">
+        </video>
+        <br>
+        <button id="playid" onclick="videoplay()">Play</button>
+        <button id="pauseid" disabled=false onclick="videopause()">Pause</button>
+
+        <hr>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="Audio.mp3" >
+        </audio>
+
+            <script>
+                var videoref= document.getElementById("myvideo")
+                var playref = document.getElementById("playid")
+                var pauseref = document.getElementById("pauseid")
+
+                var videoplay =function()
+                {
+                  console.log("Video Playing!!")
+                  videoref.play();
+                  playref.disabled= true;
+                  pauseref.disabled= false;
+                }
+
+                var videopause =function()
+                {
+                  console.log("Video Paused!!")
+                  videoref.pause();
+                  playref.disabled= false;
+                  pauseref.disabled= true;
+                }
+
+            </script>
+    </body>
+</html>

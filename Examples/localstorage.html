@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HTML5 Local Storage</title>
+    </head>
+    <body onload="initialvalues()">
+        <h1>Local Storage Counter</h1>
+        <button onclick="incrementcountetr()"> Increase Counter in LS </button>
+        <div id="container">Get Counter value from LS</div>
+
+
+        <script>
+            var currentCounter = 0
+            var containerRef= document.getElementById("container")
+
+            var incrementcountetr= function(){
+                currentCounter++
+                localStorage.setItem("counter",currentCounter)
+                containerRef.innerHTML=localStorage.getItem("counter")
+            }
+
+            var initialvalues = function()
+            {
+                if(localStorage)
+                {
+                    if(localStorage.counter == 0)
+                    {
+                        localStorage.setItem("Counter",0)
+                    }
+                    else{
+                        currentCounter = localStorage.getItem("Counter")
+                        containerRef.innerHTML=localStorage.getItem("counter")
+                    }
+                }
+            }
+
+
+
+        </script>
+    </body>
+</html>

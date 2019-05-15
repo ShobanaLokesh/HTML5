@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            CSS Basics
+        </title>
+    </head>
+    <style>
+        /* syntax */
+        /* selector
+        {
+            Property:value;
+        } */
+       
+        body{
+            background-color: lightblue;
+            color: magenta;
+        }
+        p{
+            color: black;
+            float: left;
+            
+        }
+        li{
+            list-style-type: lower-alpha;
+            color:orangered;
+            border: 5px solid red;
+            border-radius: 100px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .Item1{
+            color: blue;
+            font-size: 25px;
+            list-style-type: circle;
+            margin: 10px
+        }
+        .Item2{
+            color: orangered;
+            font-size: 25px;
+            margin: 10px;
+            padding-left: 20px;
+        }
+        .Item3{
+            color: violet;
+            font-size: 25px;
+            margin: 10px;
+            padding-left: 20px;
+        }
+        #list{
+            border-width: 5px;
+            border-style: dashed;
+            border-color: yellow;
+        }
+        div.gallery {
+            border: 2px solid red  ;
+          }
+          
+          div.gallery:hover {
+            border: 2px solid blue;
+          }
+          
+          div.gallery img {
+            width: 100%;
+            height: auto;
+          }
+          
+          div.desc {
+            padding: 15px;
+            text-align: center;
+          }
+
+          .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+          }
+          
+          
+
+    </style>
+
+    <body>
+        <h1>
+            CSS Basics
+        </h1>
+        <p>I am Paragraph </p>
+        <ul id="list">
+            <li class="Item1" >I am Bullet 1 </li>
+            <li class="Item2">I am Bullet 2 </li>
+            <li class="Item3">I am Bullet 3 </li>
+        </ul>
+        
+          </style>
+          </head>
+          <body>
+          <h2>Responsive Image Gallery</h2>          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="Mountain.jpg">
+                <img src="Mountain.jpg" alt="Cinque Terre" width="600" height="400">
+              </a>
+              <div class="desc">Mountain</div>
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="forest.jpg">
+                <img src="forest.jpg" alt="Forest" width="600" height="400">
+              </a>
+              <div class="desc">Forest</div>
+            </div>
+          </div>
+          
+    </body>
+</html>

@@ -1,0 +1,37 @@
+C:\Users\training\AppData\Roaming\npm
+
+
+options or alternatives of live server -- light weight server
+
+what is promise, observable
+
+------------------------
+
+demo of progressive web application
+
+SSE(server side events(allow open wen u open up a browser)
+
+
+-------------------------
+live-server --port=new port number  --> if live server fails to assign new server wen ur specified server is alredy in use
+
+local storage - 5mb can be stored for one url. It is used for storing key value pairs.it will persist the data even wen d browser is closed.
+
+
+session storage:data will be lost once the browser is closed.
+
+increament, decrement can b done in local storage(developer tools)
+to identify the datatype use typeof(localstorage.location)
+
+
+----------------------------
+
+free-css.com
+
+
+
+
+
+
+
+
